@@ -1,0 +1,40 @@
+/* This file only runs on screens smaller than 768px (Mobile/Tablets) */
+@media (max-width: 768px) {
+    
+    .container {
+        width: 90%; /* Wider container for small screens */
+    }
+
+    /* Stack Navigation */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Stack About Section */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .image-column {
+        order: -1; /* Puts image above text on mobile (optional) */
+        width: 100%;
+    }
+
+    /* Stack Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-right p {
+        text-align: center; /* Center align contact info on mobile */
+    }
+}

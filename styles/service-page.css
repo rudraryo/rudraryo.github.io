@@ -1,0 +1,192 @@
+/* Service Page Specific Styles */
+
+/* Service Content Section */
+.service-content {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Image */
+.service-image {
+    width: 100%;
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Service Description */
+.service-description {
+    padding: 1rem 0;
+}
+
+.service-description h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-description h3 {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.service-description ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-description ul li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.service-description .btn-primary {
+    margin-top: 2rem;
+}
+
+/* Other Services Section */
+.other-services {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.other-services h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+}
+
+/* Service Navigation Grid */
+.service-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-nav-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-nav-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Thumbnail */
+.service-thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.service-nav-item:hover .service-thumbnail img {
+    transform: scale(1.1);
+}
+
+/* Service Nav Item Content */
+.service-nav-item h3 {
+    padding: 1rem 1.5rem 0.5rem;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.service-nav-item p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Service Pages */
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 2rem;
+    }
+
+    .content-wrapper {
+        padding: 1.5rem;
+    }
+
+    .service-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-description p,
+    .service-description ul li {
+        font-size: 1rem;
+    }
+
+    .service-nav {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-content {
+        padding: 40px 0;
+    }
+
+    .other-services {
+        padding: 40px 0;
+    }
+
+    .service-title {
+        font-size: 1.8rem;
+    }
+
+    .service-description ul {
+        margin-left: 1.5rem;
+    }
+}
